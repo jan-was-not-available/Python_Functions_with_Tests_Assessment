@@ -18,6 +18,10 @@ All tests must pass to receive credit.
 #   - Do NOT print anything
 #
 def sum_list(numbers: list) -> int:
+    sum_list = 0 
+    while (numbers) in list:
+          
+    return sum_list
     pass
 
 
@@ -39,6 +43,10 @@ def sum_list(numbers: list) -> int:
 #   - Do NOT print anything
 #
 def count_letter(s: str, letter: str) -> int:
+    max = 0
+    for char in s:
+        while len(s) > 0:
+            if char != 
     pass
 
 
