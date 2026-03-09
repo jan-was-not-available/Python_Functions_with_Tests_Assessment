@@ -18,8 +18,15 @@ All tests must pass to receive credit.
 #   - Do NOT print anything
 #
 def sum_list(numbers: list) -> int:
-    sum_list = 0 
-    while (numbers) in list:
+    output = 0 
+    idx = 0
+    while idx < len(numbers):
+        curr_num = numbers[idx]
+        output += curr_num
+        idx += 1
+    
+    return output
+    
           
     return sum_list
     pass
@@ -43,10 +50,14 @@ def sum_list(numbers: list) -> int:
 #   - Do NOT print anything
 #
 def count_letter(s: str, letter: str) -> int:
-    max = 0
-    for char in s:
-        while len(s) > 0:
-            if char != 
+    count = 0 
+    idx = 0
+    while idx < len(s):
+        curr_letter = s[idx]
+        if curr_letter == letter:
+            count += 1
+        idx += 1
+    return count
     pass
 
 
@@ -68,4 +79,19 @@ def count_letter(s: str, letter: str) -> int:
 #   - Do NOT print anything
 #
 def is_palindrome(s: str) -> bool:
+    reverse_s = ""
+    idx = len(s)-1
+
+    while idx >= 0:
+        char = s[idx]
+        reverse_s = reverse_s + char
+        idx -= 1
+    
+    # for char in s:
+    #   reverse_s = char + reverse_s
+
+    if reverse_s == s:
+        return True
+    else:
+        return False
     pass
